@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Travel Guide</string>
+    <string name="select_categories">Select Categories</string>
+    <string name="popular_spots">Popular Spots</string>
+    <string name="cultural_spots">Cultural Spots</string>
+    <string name="search_cities">Search Cities</string>
+    <string name="see_all">see all</string>
+</resources>

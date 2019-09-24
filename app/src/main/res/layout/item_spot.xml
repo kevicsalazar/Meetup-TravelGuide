@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_small"
+    app:cardCornerRadius="@dimen/image_corner_radius"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivPicture"
+            android:layout_width="@dimen/image_spot_width"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="3:2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/ivMask"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/mask_picture"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintBottom_toBottomOf="@id/ivPicture"
+            app:layout_constraintEnd_toEndOf="@id/ivPicture"
+            app:layout_constraintStart_toStartOf="@id/ivPicture"
+            app:layout_constraintTop_toTopOf="@id/ivPicture" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_default"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/body_size"
+            app:layout_constraintBottom_toBottomOf="@id/ivPicture"
+            app:layout_constraintEnd_toEndOf="@id/ivPicture"
+            app:layout_constraintStart_toStartOf="@id/ivPicture"
+            tools:text="Taj Mahal" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
